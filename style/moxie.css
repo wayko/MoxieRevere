@@ -1,0 +1,146 @@
+@charset "utf-8";
+/* CSS Document */
+
+.wrapper{
+	width:960px;
+	margin:0 auto;
+	position: absolute;
+
+}
+
+.handmade{
+	position: relative;
+	top:-320px;
+	left: -100px;
+}
+.sect2 img{
+	position: relative;
+	top:-180px;
+	left:70px;
+	z-index: 1;
+}
+
+.shoppingbag{
+	 position: relative;
+	left: 95%;
+
+}
+.navright{
+	 position: relative;
+	left: 76%;
+	top:-60px;
+}
+.navright li{
+	position: relative;
+	display: inline;
+	margin-right:5px;
+	top:-300px;
+
+
+}
+.navright a{
+	color:#fe05f7;
+	text-decoration: none;
+	font-size:20px;
+	font-weight: bold;
+}
+.box{
+	display: block;	
+}
+.right2{
+	position: relative;
+	top:-60px;
+	left:6%;
+}
+
+.main{
+	position: relative;
+	background-color:#000;
+	height:400px;
+	top:-342px;
+	left:125px;
+	width: 900px;
+}
+.white{
+	font-family:Magneto;
+	font-size: 1.5em;
+	color:#fff;
+}
+.white1{
+	position:relative;
+	left:35%;
+	top:30px;
+}
+footer li{
+	display: inline;
+	margin-left:70px;
+	font-size: 12px;
+
+}
+footer a{
+	text-decoration: none;
+	color: #000;
+}
+.greetings{
+	background: rgb(2,1,1); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(2,1,1,1) 0%, rgba(254,5,247,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(2,1,1,1)), color-stop(100%,rgba(254,5,247,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, rgba(2,1,1,1) 0%,rgba(254,5,247,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, rgba(2,1,1,1) 0%,rgba(254,5,247,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, rgba(2,1,1,1) 0%,rgba(254,5,247,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom, rgba(2,1,1,1) 0%,rgba(254,5,247,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#020101', endColorstr='#fe05f7',GradientType=0 ); /* IE6-9 */
+width:370px;
+height:171px;
+position: relative;
+top:-300px;
+left:125px;
+}
+.greet{
+	position: relative;
+	left: 20%;
+	top:30px;
+}
+.announcement{
+	position: relative;
+	top:-300px;
+	left: 130px;
+}
+.newitems{
+	position: relative;
+	top:-320px;
+	left: 62%;
+}
+.feature{
+	position: relative;
+	top:-471px;
+	left: 62%;
+	width:185px;
+	height:171px;
+}
+.garagesale{
+	position: relative;
+	top:-641px;
+	left: 89.7%;
+	width:185px;
+	height:171px;
+}
+.anntext{
+	color:#fe05f7;
+	font-size:20px;
+	font-weight: bold;
+}
+footer{
+	position: relative;
+	top:-541px;
+}
+footer ul{
+	position: relative;
+	left:10%;
+	top: -30px;
+}
+.copyright{
+	position: relative;
+	left:50%;
+	font-size: 13px;
+	}

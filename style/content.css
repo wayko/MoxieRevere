@@ -1,0 +1,22 @@
+#contentblock{
+padding:10px 10px;
+background: #000;
+border: 4px #6699FF solid;
+-moz-border-radius: 10px 10px 10px 10px;
+border-radius: 10px 10px 10px 10px;
+}
+#content{		
+height: 300px; 		
+padding-left: 15px;	
+overflow: auto;	
+background: #000;	
+-moz-border-radius: 10px 10px 10px 10px;
+border-radius: 10px 10px 10px 10px;
+border-left: 1px black double;
+border-top: 1px black double;
+border-bottom: 1px black double;
+-webkit-box-shadow: rgba(0, 0, 128, 0.246094) 8px 6px 3px;
+-moz-box-shadow: rgba(0, 0, 128, 0.246094) 8px 6px 3px;
+box-shadow: rgba(0, 0, 128, 0.246094) 8px 6px 3px;
+color: #fff;
+}
