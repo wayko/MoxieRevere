@@ -144,3 +144,10 @@ footer ul{
 	left:50%;
 	font-size: 13px;
 	}
+	ul.allItems{
+		display:inline-block;
+		margin-top:40px;
+		margin-left:-5px;
+		padding:0;
+		
+	}
