@@ -66,6 +66,12 @@
 	font-size: 1.5em;
 	color:#fff;
 }
+
+.white2{
+	
+	font-size: 1em;
+	color:#fff;
+}
 .white1{
 	position:relative;
 	left:35%;
@@ -144,10 +150,53 @@ footer ul{
 	left:50%;
 	font-size: 13px;
 	}
-	ul.allItems{
+	div.allItems{
+		position: relative;
 		display:inline-block;
-		margin-top:40px;
-		margin-left:-5px;
-		padding:0;
-		
+		margin-right:10px;
+		top:90px;
+	}
+	div.allItems:nth-child(1n){
+		margin-left: 25px;
+	}
+	
+	.addcart{
+		position: relative;
+		top:-109px;
+		margin-left: 5px;
+		background: rgb(2,1,1); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(2,1,1,1) 0%, rgba(254,5,247,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(2,1,1,1)), color-stop(100%,rgba(254,5,247,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, rgba(2,1,1,1) 0%,rgba(254,5,247,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, rgba(2,1,1,1) 0%,rgba(254,5,247,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, rgba(2,1,1,1) 0%,rgba(254,5,247,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom, rgba(2,1,1,1) 0%,rgba(254,5,247,1) 100%); /* W3C */
+
+height:125px;
+	}
+	
+	.addcart1{
+		position: relative;
+		top: -69px;
+		background: rgb(2,1,1); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(2,1,1,1) 0%, rgba(254,5,247,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(2,1,1,1)), color-stop(100%,rgba(254,5,247,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, rgba(2,1,1,1) 0%,rgba(254,5,247,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, rgba(2,1,1,1) 0%,rgba(254,5,247,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, rgba(2,1,1,1) 0%,rgba(254,5,247,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom, rgba(2,1,1,1) 0%,rgba(254,5,247,1) 100%); /* W3C */
+
+height:125px;
+	}
+	
+	.addcart img{
+		margin-top:15px;
+		margin-left: 5px;
+	}
+	div.allItems li{
+		display:block;
+	}
+	ul.oneItem
+	{
+	display:inline-block;
 	}

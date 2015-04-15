@@ -1,44 +1,59 @@
 (function(){
-var app = angular.module("moxierevere",[]);
+var app = angular.module("moxierevere",['ngCart']);
 
+    app.filter('myFilter', function () {
+        return function (items, count) {
+            var result = [];
+            for (var i = 0; i < items.length && result.length < count; ++i) {
+                if (items[i].available > 0) result.push(items[i]);
+            }
+            return result;
+        };
+    });
+    
 app.controller("ItemsController", function(){
 	this.items = allItems;
 	
 });
 var allItems = [
 {
+	id:0,
 	name: "item1",
-	image: "images/br.JPG" ,
+	image: "http://dreamcpu.com/moxierevere/images/br.JPG" ,
 	price: 2.00,
-	available: true,
+	available: 1,
 	size: "S , M, L"
 },
 {
+	id:1,
 	name: "item2",
-	image: "images/avacados.JPG" ,
+	image: "http://dreamcpu.com/moxierevere/images/avacados.JPG" ,
 	price: 5.00,
-	available: true,
+	available: 10,
 	size: "S , M, L"
 },
 {
+	id:2,
 	name: "item3",
-	image: "images/chicha.JPG" ,
+	image: "http://dreamcpu.com/moxierevere/images/chicha.JPG" ,
 	price: 2.00,
-	available: false,
+	available: 3,
 	size: "S , M, L"
 },
 {
+	id:3,
 	name: "item4",
-	image: "images/lomo.JPG" ,
+	image: "http://dreamcpu.com/moxierevere/images/lomo.JPG" ,
 	price: 6.00,
-	available: true,
+	available: 0,
 	size: "S , M, L"
 },
 {
+	id:4,
 	name: "item5",
-	image: "images/satuna.JPG" ,
+	image: "http://dreamcpu.com/moxierevere/images/satuna.JPG" ,
 	price: 2.00,
-	available: false,
+	available: 5,
 	size: "S , M, L"
 }
 ];
