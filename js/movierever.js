@@ -1,6 +1,5 @@
 (function(){
 var app = angular.module("moxierevere",['ngCart']);
-
     app.filter('myFilter', function () {
         return function (items, count) {
             var result = [];
@@ -11,10 +10,12 @@ var app = angular.module("moxierevere",['ngCart']);
         };
     });
     
-app.controller("ItemsController", function(){
-	this.items = allItems;
+app.controller("ItemsController",['ngCart', function(ngCart){
 	
-});
+	ngCart.setTaxRate(0.00);
+    ngCart.setShipping(2.99); 
+	this.items = allItems;
+}]);
 var allItems = [
 {
 	id:0,
@@ -57,4 +58,8 @@ var allItems = [
 	size: "S , M, L"
 }
 ];
+
+app.controller("nxtPrevController",  function(){
+	
+});		
 })();

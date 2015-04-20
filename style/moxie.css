@@ -2,7 +2,7 @@
 /* CSS Document */
 
 .wrapper{
-	width:960px;
+	width:1024px;
 	margin:0 auto;
 	position: absolute;
 
@@ -10,8 +10,8 @@
 
 .handmade{
 	position: relative;
-	top:-320px;
-	left: -100px;
+	top:-170px;
+	left: -130px;
 }
 .sect2 img{
 	position: relative;
@@ -59,7 +59,7 @@
 	height:400px;
 	top:-342px;
 	left:125px;
-	width: 900px;
+	width: 980px;
 }
 .white{
 	font-family:Magneto;
@@ -88,14 +88,6 @@ footer a{
 	color: #000;
 }
 .greetings{
-	background: rgb(2,1,1); /* Old browsers */
-background: -moz-linear-gradient(top, rgba(2,1,1,1) 0%, rgba(254,5,247,1) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(2,1,1,1)), color-stop(100%,rgba(254,5,247,1))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top, rgba(2,1,1,1) 0%,rgba(254,5,247,1) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top, rgba(2,1,1,1) 0%,rgba(254,5,247,1) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top, rgba(2,1,1,1) 0%,rgba(254,5,247,1) 100%); /* IE10+ */
-background: linear-gradient(to bottom, rgba(2,1,1,1) 0%,rgba(254,5,247,1) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#020101', endColorstr='#fe05f7',GradientType=0 ); /* IE6-9 */
 width:370px;
 height:171px;
 position: relative;
@@ -153,50 +145,100 @@ footer ul{
 	div.allItems{
 		position: relative;
 		display:inline-block;
-		margin-right:10px;
+		
 		top:90px;
 	}
 	div.allItems:nth-child(1n){
 		margin-left: 25px;
 	}
-	
+	div.allItemsBox{
+		top: -3px;
+		margin-right:80px;
+		height:225px;
+		width:208px;
+	}
+	div.allItemsBox img{
+		position: absolute;
+		top: 0;
+		left:80px;
+	}
+	div.allItemsBox .cartItem 
+	{
+		position: absolute;
+		top: 140px;
+		left:0;
+	}
 	.addcart{
-		position: relative;
-		top:-109px;
-		margin-left: 5px;
-		background: rgb(2,1,1); /* Old browsers */
-background: -moz-linear-gradient(top, rgba(2,1,1,1) 0%, rgba(254,5,247,1) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(2,1,1,1)), color-stop(100%,rgba(254,5,247,1))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top, rgba(2,1,1,1) 0%,rgba(254,5,247,1) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top, rgba(2,1,1,1) 0%,rgba(254,5,247,1) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top, rgba(2,1,1,1) 0%,rgba(254,5,247,1) 100%); /* IE10+ */
-background: linear-gradient(to bottom, rgba(2,1,1,1) 0%,rgba(254,5,247,1) 100%); /* W3C */
+		position: absolute;
+		top:-3px;
+		left:180px;
 
-height:125px;
+width:100px;
+height:225px;
 	}
 	
 	.addcart1{
-		position: relative;
-		top: -69px;
-		background: rgb(2,1,1); /* Old browsers */
+		position: absolute;
+		top: -3px;
+		left:-25px;
+		
+width:75px;
+height:225px;
+	}
+	.pinkGrad{
+	background: rgb(2,1,1); /* Old browsers */
 background: -moz-linear-gradient(top, rgba(2,1,1,1) 0%, rgba(254,5,247,1) 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(2,1,1,1)), color-stop(100%,rgba(254,5,247,1))); /* Chrome,Safari4+ */
 background: -webkit-linear-gradient(top, rgba(2,1,1,1) 0%,rgba(254,5,247,1) 100%); /* Chrome10+,Safari5.1+ */
 background: -o-linear-gradient(top, rgba(2,1,1,1) 0%,rgba(254,5,247,1) 100%); /* Opera 11.10+ */
 background: -ms-linear-gradient(top, rgba(2,1,1,1) 0%,rgba(254,5,247,1) 100%); /* IE10+ */
 background: linear-gradient(to bottom, rgba(2,1,1,1) 0%,rgba(254,5,247,1) 100%); /* W3C */
-
-height:125px;
+	}
+	
+		.addcart3{
+		position: absolute;
+		top: 127px;
+		left:960px;
+width:20px;
+height:225px;
+	}
+	
+			.addcart2{
+		position: absolute;
+		top: 127px;
+		left:0;
+width:20px;
+height:225px;
 	}
 	
 	.addcart img{
+		
 		margin-top:15px;
-		margin-left: 5px;
 	}
+	
+	hr {
+    margin:40px 0;
+} 
 	div.allItems li{
 		display:block;
 	}
 	ul.oneItem
 	{
 	display:inline-block;
+	}
+	span[ng-click]{
+		cursor: pointer;
+	}
+	select
+	{
+		width:90px;
+	}
+	.centerarrow
+	{
+		position:absolute;
+		top:95px;
+		font-size:2.5em;
+	}
+	.centerarrow:hover{
+		cursor:pointer;
 	}
