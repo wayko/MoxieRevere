@@ -18,7 +18,7 @@
 </head>
 <body ng-controller="ItemsController as item">
 <div class="wrapper" id="sect2">
-	<div class="shoppingbag" ng-controller="OpenCartController">
+	<div class="shoppingbag">
 
 		<a href="#cartSect"><img src="images/shoppingbag.png" class="box"></a>
 			
@@ -113,7 +113,7 @@
 		</div>
 		<div>
 		<hr>
-		<ngcart-checkout service="log"></ngcart-checkout>
+		<ngcart-checkout service="paypal"></ngcart-checkout>
 		<a href="#sect2"><button class="btn btn-success">Return To Page</button></a>
 		</div>
 		</section>
