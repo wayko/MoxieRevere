@@ -47,11 +47,13 @@
 	<div class="main">
 		<span class="white white1 box">All items listed are one of a kind.</span>
 		<span class="white white1 box">Please Click on image to view.</span>
-		<div class="nextitem white2 addcart2 pinkGrad"><p class="centerarrow"><</p></div>
-		<div ng-repeat="all in item.items |myFilter:3"  class="allItems">
+		<div class="nextitem white2 addcart2 pinkGrad"><p class="centerarrow" ng-click="prevPage()"><</p></div>
+		<div ng-repeat="all in item.items |myFilter:itemsPerListing"  class="allItems">
+		
 		<div class="allItemsBox" role="listbox">
 		<ul>
 			<ul class="oneItem addcart1 pinkGrad">
+			<li class="white2">{{all.id}}</li>
 			<li class="white2 ">{{all.name}}</li>
 			<li class="white2">{{all.size}}</li>
 			<li class="white2 ">{{all.price|currency}}</li>
@@ -70,7 +72,7 @@
 		</div>
 	
 		</div>
-		<div class="previtem white2 addcart3 pinkGrad"><p class="centerarrow">></p></div>
+		<div class="previtem white2 addcart3 pinkGrad"><p class="centerarrow" ng-click="nextPage()">></p></div>
 		<div id="stash"></div>
 	</div>
 	
