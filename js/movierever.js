@@ -20,6 +20,7 @@ app.controller("ItemsController",['ngCart', '$scope', function(ngCart, $scope){
 	$scope.itemsPerListing = 3;
 	
 $scope.prevPage = function() {
+	this.items = allItems;
 		if($scope.itemsPerListing <= 3)
 		{
 			$scope.itemsPerListing =  3;
@@ -29,12 +30,12 @@ $scope.prevPage = function() {
 			if($scope.itemsPerListing % 3 == 0)
 			{
 				$scope.itemsPerListing = $scope.itemsPerListing - 3 ;
-			alert($scope.itemsPerListing);
+				
 			}
 			else
 			{
 				$scope.itemsPerListing = $scope.itemsPerListing - 1 ;
-			alert($scope.itemsPerListing);
+			
 			}
 			
 		}
@@ -49,9 +50,11 @@ $scope.prevPage = function() {
 		}
 		else
 		{
-			  alert($scope.itemsPerListing + "<" + this.items.length);
+		
 		$scope.itemsPerListing = $scope.itemsPerListing + 3 ;
+		$scope.items.splice(0,2);
 		}
+		
   };
 }]);
 var allItems = [
@@ -84,7 +87,7 @@ var allItems = [
 	name: "item4",
 	image: "http://dreamcpu.com/moxierevere/images/lomo.JPG" ,
 	price: 6.00,
-	available: 0,
+	available: 4,
 	size: "S , M, L"
 },
 {
