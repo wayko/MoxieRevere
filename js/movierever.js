@@ -18,44 +18,38 @@ app.controller("ItemsController",['ngCart', '$scope', function(ngCart, $scope){
     ngCart.setShipping(2.99); 
 	this.items = allItems;
 	$scope.itemsPerListing = 3;
-	
-$scope.prevPage = function() {
-	this.items = allItems;
-		if($scope.itemsPerListing <= 3)
-		{
-			$scope.itemsPerListing =  3;
-		}
-		else
-		{
-			if($scope.itemsPerListing % 3 == 0)
-			{
-				$scope.itemsPerListing = $scope.itemsPerListing - 3 ;
-				
-			}
-			else
-			{
-				$scope.itemsPerListing = $scope.itemsPerListing - 1 ;
-			
-			}
-			
-		}
-    
-  };
-  $scope.nextPage = function() {
+	var shifteditem = [];
+	var shifteditems = [];
+	var counter;
+$scope.nextitem = function () {
 	  this.items = allItems;
-	
 		if($scope.itemsPerListing >= this.items.length)
 		{
 			$scope.itemsPerListing =  this.items.length;
+			console.log($scope.itemsPerListing);
 		}
 		else
 		{
-		
-		$scope.itemsPerListing = $scope.itemsPerListing + 3 ;
-		$scope.items.splice(0,2);
-		}
-		
+		shifteditem.push( $scope.items.shift());
+		counter = shifteditem.length;
+		 console.log(this.items.length);
+		 if (counter > $scope.itemsPerListing)
+		 {
+			 counter  = this.items.length + 2;
+			
+		 }
+		}		 
   };
+ 
+$scope.previtem = function() {
+	this.items = allItems;
+	
+	if(counter > 0){
+		$scope.items.unshift(shifteditem[counter-1]);
+		counter = counter - 1;
+		console.log(counter);
+	}	
+};
 }]);
 var allItems = [
 {
@@ -71,7 +65,7 @@ var allItems = [
 	name: "item2",
 	image: "http://dreamcpu.com/moxierevere/images/avacados.JPG" ,
 	price: 5.00,
-	available: 10,
+	available: 0,
 	size: "S , M, L"
 },
 {
@@ -79,7 +73,7 @@ var allItems = [
 	name: "item3",
 	image: "http://dreamcpu.com/moxierevere/images/chicha.JPG" ,
 	price: 2.00,
-	available: 3,
+	available: 20,
 	size: "S , M, L"
 },
 {
@@ -108,6 +102,14 @@ var allItems = [
 },
 {
 	id:6,
+	name: "item5",
+	image: "http://dreamcpu.com/moxierevere/images/satuna.JPG" ,
+	price: 2.00,
+	available: 5,
+	size: "S , M, L"
+},
+{
+	id:7,
 	name: "item5",
 	image: "http://dreamcpu.com/moxierevere/images/satuna.JPG" ,
 	price: 2.00,
