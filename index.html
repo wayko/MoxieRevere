@@ -65,7 +65,7 @@
 			<ul class="oneItem addcart pinkGrad">
 			
    			<li class="{{all.id}} white2 ">Add to Cart</li>
-			     <ngcart-addtocart id="{{all.id}}" name="{{all.name}}" price="{{all.price}}" quantity="1" quantity-max="{{all.available}}"><img src="images/shoppingbag.png" class="box cartItem"></ngcart-addtocart>   
+			     <ngcart-addtocart id="{{all.id}}" name="{{all.name}}" price="{{all.price}}" quantity-max="{{all.available}}" data="items"><img src="images/shoppingbag.png" class="box cartItem"></ngcart-addtocart>   
 			</ul>
   		</ul>
 
@@ -113,9 +113,13 @@
 		<hr>
 		<ngcart-cart></ngcart-cart>
 		</div>
+		  <div class="col-xs-4">
+        <h4>service 'log'</h4>
+        <ngcart-checkout service="log" >Checkout</ngcart-checkout>
+    </div>
 		<div>
 		<hr>
-		<ngcart-checkout service="paypal"></ngcart-checkout>
+		<ngcart-checkout service="paypal" settings="payPalSettings"></ngcart-checkout>
 		<a href="#sect2"><button class="btn btn-success">Return To Page</button></a>
 		</div>
 		</section>

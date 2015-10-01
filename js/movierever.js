@@ -12,12 +12,13 @@ var app = angular.module("moxierevere",['ngCart']);
             return result;
         };
     });
-app.controller("ItemsController",['ngCart', '$scope', function(ngCart, $scope){
+app.controller("ItemsController",['$scope', '$http', 'ngCart', function($scope, $http, ngCart){
 	
 	ngCart.setTaxRate(0.00);
     ngCart.setShipping(2.99); 
 	this.items = allItems;
 	$scope.itemsPerListing = 3;
+	 $scope.myVariable = "My Variable value";
 	var shifteditem = [];
 	var shifteditems = [];
 	var counter;
@@ -55,7 +56,7 @@ var allItems = [
 {
 	id:0,
 	name: "item1",
-	image: "http://dreamcpu.com/moxierevere/images/br.JPG" ,
+	image: "./images/br.JPG" ,
 	price: 2.00,
 	available: 10,
 	size: "S , M, L"
@@ -63,7 +64,7 @@ var allItems = [
 {
 	id:1,
 	name: "item2",
-	image: "http://dreamcpu.com/moxierevere/images/avacados.JPG" ,
+	image: "./images/avacados.JPG" ,
 	price: 5.00,
 	available: 0,
 	size: "S , M, L"
@@ -71,7 +72,7 @@ var allItems = [
 {
 	id:2,
 	name: "item3",
-	image: "http://dreamcpu.com/moxierevere/images/chicha.JPG" ,
+	image: "./images/chicha.JPG" ,
 	price: 2.00,
 	available: 20,
 	size: "S , M, L"
@@ -79,7 +80,7 @@ var allItems = [
 {
 	id:3,
 	name: "item4",
-	image: "http://dreamcpu.com/moxierevere/images/lomo.JPG" ,
+	image: "./images/lomo.JPG" ,
 	price: 6.00,
 	available: 4,
 	size: "S , M, L"
@@ -87,7 +88,7 @@ var allItems = [
 {
 	id:4,
 	name: "item5",
-	image: "http://dreamcpu.com/moxierevere/images/satuna.JPG" ,
+	image: "./images/satuna.JPG" ,
 	price: 2.00,
 	available: 5,
 	size: "S , M, L"
@@ -95,7 +96,7 @@ var allItems = [
 {
 	id:5,
 	name: "item5",
-	image: "http://dreamcpu.com/moxierevere/images/satuna.JPG" ,
+	image: "./images/satuna.JPG" ,
 	price: 2.00,
 	available: 5,
 	size: "S , M, L"
@@ -103,7 +104,7 @@ var allItems = [
 {
 	id:6,
 	name: "item5",
-	image: "http://dreamcpu.com/moxierevere/images/satuna.JPG" ,
+	image: "./images/satuna.JPG" ,
 	price: 2.00,
 	available: 5,
 	size: "S , M, L"
@@ -111,7 +112,7 @@ var allItems = [
 {
 	id:7,
 	name: "item5",
-	image: "http://dreamcpu.com/moxierevere/images/satuna.JPG" ,
+	image: "./images/satuna.JPG" ,
 	price: 2.00,
 	available: 5,
 	size: "S , M, L"
